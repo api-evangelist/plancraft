@@ -1,8 +1,28 @@
 aid: plancraft
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/plancraft.png
 name: plancraft
-description: 'plancraft is a company surfaced as a portfolio company of creandum and added to the API
-  Evangelist network as a stub for enrichment. Sector: saas. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  plancraft is a German cloud-based business management software for craftspeople and
+  trades businesses (Handwerk). It digitizes administrative workflows end to end —
+  quote and estimate creation, project planning, time tracking, on-site documentation,
+  material and labor costing, and invoicing — inside one integrated platform aimed at
+  small and mid-sized construction and trade companies. plancraft supports DATEV export
+  for tax/accounting workflows and DATANORM and GAEB catalog imports for material data
+  and tender processing. It is a venture-backed SaaS company (portfolio company of
+  Creandum). As of this enrichment pass plancraft publishes no public developer API,
+  SDK, or OpenAPI surface — integrations are delivered as prebuilt connectors and
+  standardized file-format import/export.
 url: https://raw.githubusercontent.com/api-evangelist/plancraft/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +32,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Saas
+- SaaS
+- Construction
+- Trades
+- Handwerk
+- Field Service
+- Invoicing
+- Project Management
+- Germany
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,32 @@ maintainers:
 common:
 - type: Website
   url: https://plancraft.com/
+- type: Support
+  url: https://help.plancraft.com/de/
+- type: Blog
+  url: https://plancraft.com/de-de/blog
+- type: Pricing
+  url: https://plancraft.com/de-de/preises
+- type: SignUp
+  url: https://plancraft.com/de-de/register
+- type: Login
+  url: https://plancraft.com/de-de/login
+- type: TermsOfService
+  url: https://plancraft.com/de-de/agb
+- type: PrivacyPolicy
+  url: https://plancraft.com/de-de/datenschutz
+- type: SecurityTxt
+  url: well-known/plancraft-security.txt
+- type: WellKnown
+  url: well-known/plancraft-well-known.yml
+- type: DomainSecurity
+  url: security/plancraft-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/plancraft-vulnerability-disclosure.yml
+- type: Security
+  url: https://plancraft.com/.well-known/security.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
